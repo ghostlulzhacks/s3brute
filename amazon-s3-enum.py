@@ -1,13 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
-import queue
+import Queue
 import threading
 import argparse
 
 class amazonBucketClass():
 
 	def __init__(self,domain,wordlist):
-		self.q = queue.Queue()
+		self.q = Queue.Queue()
 		self.Searchdomain = domain
                 self.wordlist = wordlist
                 self.amazonBase = ".s3.amazonaws.com"
